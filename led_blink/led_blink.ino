@@ -1,12 +1,12 @@
-const int ledPin = 2;
+const int ledPin = 2;       // IO2をLDEに使用
 
 void setup() {
-  pinMode(ledPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);  // IO2を出力に設定
 }
 
 void loop() {
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
-  delay(500);
+  digitalWrite(ledPin, HIGH); // LEDをONにする
+  delay(500);                 // 0.5秒待つ
+  digitalWrite(ledPin, LOW);　// LEDをOFFにする
+  delay(500);                 // 0.5秒待つ
 }
