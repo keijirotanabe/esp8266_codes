@@ -22,10 +22,10 @@ void setup() {
 }
 
 void loop() {
-    int slideSwState = digitalRead(slideSwPin);  // スライドスイッチの状態読み取り
-    if (slideSwState == HIGH) {
-        digitalWrite(ledPin, HIGH);  // LDEをON
-    } else {
-        digitalWrite(ledPin, LOW);   // LDEをOFF
-    }
+  int slideSwState = digitalRead(slideSwPin);  // スライドスイッチの状態読み取り
+  if (slideSwState == HIGH) {
+    digitalWrite(ledPin, HIGH);  // LDEをON
+  } else {
+    digitalWrite(ledPin, LOW);   // LDEをOFF
+  }
 }

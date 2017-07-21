@@ -16,7 +16,7 @@ void setup() {
 }
 
 void loop() {
-    int slideSwState = digitalRead(slideSwPin);  // スライドスイッチの状態読み取り
-    Serial.println(slideSwState);                // シリアルモニタにスライドスイッチの状態を表示
-    delay(100);　　　　　　　　　　　　　　　　　　 // 100ms待つ
+  int slideSwState = digitalRead(slideSwPin);  // スライドスイッチの状態読み取り
+  Serial.println(slideSwState);                // シリアルモニタにスライドスイッチの状態を表示
+  delay(100);　　　　　　　　　　　　　　　　　　 // 100ms待つ
 }
