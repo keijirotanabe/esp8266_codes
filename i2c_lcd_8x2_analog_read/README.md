@@ -1,10 +1,16 @@
-# ESP8266からI2C小型8x2LCDに「Hello!」を表示
+# アナログ入力値を、I2C小型8x2LCDに表示
+
+0V ~ 1V の電圧を読み取って 0 ~ 1023 に変換する  
+「`analogRead(A0)`」で読み取り
+
+配線
+ * TOUT --- 可変抵抗
+ * SDA  --- IO4
+ * SCL  --- IO5
+
 
 秋月の「[I2C接続小型8文字×2行液晶](http://akizukidenshi.com/catalog/g/gK-06795/)」を使用
 
-配線
- * SDA  --- IO4
- * SCL  --- IO5
 
 # 使用ライブラリ
 
@@ -24,4 +30,3 @@
 
 ### 4.「ST7032」を`ドキュメント > Arduino > libraries`の中へ移動
 ![](../img/img4.png)
-
